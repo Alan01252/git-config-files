@@ -1,0 +1,1 @@
+A collection of hooks / config files I use for my projects.
