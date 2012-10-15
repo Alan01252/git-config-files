@@ -1,0 +1,10 @@
+	mysqldump -u {user} -p{password} {database} --no-data=true > {output}
+
+	if [ "$?" -eq 0 ]
+	then
+	    git add {output}
+	    exit 0
+	else
+	    echo "Mysqldump encountered a problem"
+	    exit 1
+	fi
